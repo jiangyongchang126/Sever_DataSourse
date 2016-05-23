@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
+#import "TableView.h"
 
-@interface ViewController ()
+@interface ViewController ()<TableDelegate>
+{
+    TableView *_tableView;
+}
 
 @end
 
@@ -16,7 +21,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _tableView = [[TableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+    _tableView.myDelegate = self;
+    _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    
+    [self.view addSubview:_tableView];
+    
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)passStrToController:(NSString *)str{
+    
+    DetailViewController *detailVC = [[DetailViewController alloc]init];
+    detailVC.str = str;
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

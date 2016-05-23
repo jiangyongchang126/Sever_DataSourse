@@ -14,6 +14,9 @@
 		B36642E21CF1FD02007516DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36642E11CF1FD02007516DC /* Assets.xcassets */; };
 		B36642E51CF1FD02007516DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36642E31CF1FD02007516DC /* LaunchScreen.storyboard */; };
 		B36642F01CF1FD02007516DC /* Sever_DataSourseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B36642EF1CF1FD02007516DC /* Sever_DataSourseUITests.m */; };
+		B36642FC1CF1FD1D007516DC /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B36642FB1CF1FD1D007516DC /* ArrayDataSource.m */; };
+		B36642FF1CF1FE0A007516DC /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B36642FE1CF1FE0A007516DC /* TableView.m */; };
+		B36643021CF20542007516DC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36643011CF20542007516DC /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		B36642EB1CF1FD02007516DC /* Sever_DataSourseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sever_DataSourseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36642EF1CF1FD02007516DC /* Sever_DataSourseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sever_DataSourseUITests.m; sourceTree = "<group>"; };
 		B36642F11CF1FD02007516DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36642FA1CF1FD1D007516DC /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		B36642FB1CF1FD1D007516DC /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		B36642FD1CF1FE0A007516DC /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		B36642FE1CF1FE0A007516DC /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		B36643001CF20542007516DC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B36643011CF20542007516DC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,14 @@
 			children = (
 				B36642D81CF1FD02007516DC /* AppDelegate.h */,
 				B36642D91CF1FD02007516DC /* AppDelegate.m */,
+				B36643001CF20542007516DC /* DetailViewController.h */,
+				B36643011CF20542007516DC /* DetailViewController.m */,
 				B36642DB1CF1FD02007516DC /* ViewController.h */,
 				B36642DC1CF1FD02007516DC /* ViewController.m */,
+				B36642FD1CF1FE0A007516DC /* TableView.h */,
+				B36642FE1CF1FE0A007516DC /* TableView.m */,
+				B36642FA1CF1FD1D007516DC /* ArrayDataSource.h */,
+				B36642FB1CF1FD1D007516DC /* ArrayDataSource.m */,
 				B36642DE1CF1FD02007516DC /* Main.storyboard */,
 				B36642E11CF1FD02007516DC /* Assets.xcassets */,
 				B36642E31CF1FD02007516DC /* LaunchScreen.storyboard */,
@@ -215,7 +230,10 @@
 			files = (
 				B36642DD1CF1FD02007516DC /* ViewController.m in Sources */,
 				B36642DA1CF1FD02007516DC /* AppDelegate.m in Sources */,
+				B36642FC1CF1FD1D007516DC /* ArrayDataSource.m in Sources */,
+				B36642FF1CF1FE0A007516DC /* TableView.m in Sources */,
 				B36642D71CF1FD02007516DC /* main.m in Sources */,
+				B36643021CF20542007516DC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
